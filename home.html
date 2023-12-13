@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jav.js"></script>
+    <title>IIT406 Finals</title>
+</head>
+<body onload="initClock()">
+	<header>
+		<a href="#" style="display:flex;">
+		<img src="coa.png" style="margin-left: 20px;">
+		<img src="fun.png">
+		</a>
+		
+		<div class="datetime">
+			<div class="date">
+				<span id="dayname">Day</span>,
+				<span id="month">Month</span>
+				<span id="daynum">00</span>,
+				<span id="year">Year</span>
+			</div>
+			<div class="time">
+				<span id="hour">00</span>:
+				<span id="minutes">00</span>:
+				<span id="seconds">00</span>
+				<span id="period">AM</span>
+			</div>
+		</div>
+	</header>
+
+    <div class="sidenav">
+        <button class="dropdown-btn"> About Philippines 
+			<i class="fa fa-caret-down"></i>
+			</button>
+        <div class="dropdown-container">
+            <a href="#History"> History </a>
+            <a href="#geography"> Geography and Environment </a>
+            <a href="#Demographics"> Demographics </a>
+            <a href="#culture"> Culture </a>
+        </div>
+        <button class="dropdown-btn"> Tourist Attractions 
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#luzon"> Luzon </a>
+            <a href="#visayas"> Visayas </a>
+            <a href="#mindanao"> Mindanao </a>
+        </div>
+        <a href="videogallery.html"><i class="fa fa-fw fa-youtube-play"></i> Video Gallery </a>
+        <a href="login.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+        <a href="contactus.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+      });
+    }</script>
+    
+<!-- Content -->
+    <div class="infos">
+<!-- History-->
+            <h1>Philippine History</h1><hr><hr><br>
+            <section id="History"></section>
+            <img src="negritos.jpg" alt="negritos" style="width: 300px; height: 200px;"><br>
+            <pre style="margin-top: -180px;">
+                       The Philippines has a rich and complex history that goes back north of 700,000 years. The 
+                       earliest occupants of the Philippines were Negrito gatherings, who showed up from Southeast 
+                       Asia something like quite a while back. By around 3000 BC, Austronesian people groups started 
+                       to relocate to the islands from Taiwan. These individuals carried with them their way of life, 
+                       language, and lifestyle, which would ultimately frame the premise of Filipino culture.
+                       <pre>
+            <pre style="margin-top: -20px;">In the fourteenth hundred years, Islam started to spread to the Philippines from the south. By the sixteenth 
+100 years, Islam had turned into the predominant religion in Mindanao and portions of Sulu.</pre>
+             
+            <img src="magelan.jpg" alt="magelan" style="width: 300px; height: 200px; margin-top: -30px; margin-left: 1100px;"><br>
+            <pre style="margin-top: -250px;">
+                
+In 1521, Portuguese adventurer Ferdinand Magellan showed up in the Philippines for Spain. 
+He asserted the islands for Spain and named them after Ruler Philip II. Be that as it may, 
+Magellan was killed in a fight with neighborhood clan leaders on the island of Mactan.</pre>
+
+<pre style="margin-top: 0px;">
+
+In 1565, Spanish conqueror Miguel López de Legazpi got back to the Philippines and laid out a super durable 
+Spanish settlement in Cebu. Over the course of the following three centuries, Spain colonized the Philippines, 
+presenting Catholicism, Spanish language, and culture.
+</pre>
+
+<img src="emilio.jpg" alt="Emilio Aguinaldo" style="width: 300px; height: 200px;"><br>
+<pre style="margin-top: -200px;">
+                        In 1896, the Philippine Upset disrupted out contrary to Spanish guideline. The upheaval 
+                        was driven by Emilio Aguinaldo, who laid out the Main Philippine Republic in 1898. Be 
+                        that as it may, the unrest was stopped by the Spanish-American Conflict, where the US 
+                        crushed Spain and assumed command over the Philippines.</pre>
+
+<pre style="margin-top: 0px;">
+
+The US administered the Philippines for a long time, during which time it presented American style a majority 
+rule government and instruction. In any case, the US additionally stifled Filipino patriotism and took advantage 
+of the nation's assets.
+</pre>
+
+<img src="japan.jpg" alt="Japan WW2" style="width: 300px; height: 200px; margin-top: -30px; margin-left: 1250px;"><br>
+<pre style="margin-top: -230px;">
+    
+
+In 1941, Japan attacked the Philippines during The Second Great War. The Philippines was 
+involved by Japan for quite some time, during which time the nation experienced broad 
+passing and obliteration.</pre>
+
+<pre>
+After the conflict, the Philippines recaptured its autonomy from the US in 1946. The nation has since confronted 
+various difficulties, including destitution, defilement, and political unsteadiness. Be that as it may, the 
+Philippines has likewise gained critical headway as of late and is currently viewed as one of the arising 
+economies of Asia.</pre><br><hr><hr>
+</section>
+
+<!-- Geography & Environment -->
+        <section id="geography" style="margin-top: -200px;">
+            <h1>Geography and Environment of the Philippines</h1>
+<pre style="margin-top: -30px;">
+The Philippines, an archipelago of more than 7,000 islands, is a Southeast Asian country prestigious for its 
+dazzling normal excellence and different environments. Its topography and climate assume a huge part in molding 
+its way of life, economy, and lifestyle.</pre>
+
+<img src="phgeo.png" alt="PH Map" style="width: 350px; height: 400px; margin-top: -50px;"><br>
+            <pre style="margin-top: -450px;">
+                              The Philippines is arranged in the Western Pacific Sea, settled between Taiwan 
+                              toward the north, Indonesia toward the south, and Vietnam toward the west. Its 
+                              immense regional territory, extending more than 300,000 square kilometers, is 
+                              separated into three significant island gatherings: Luzon, Visayas, and Mindanao.
+
+                              <b>Luzon</b>: The biggest and most crowded island bunch, Luzon is home to the capital 
+                              city of Manila and the famous Banaue Rice Porches, an UNESCO World Legacy Site.
+
+                              <b>Visayas</b>: Vital to the archipelago, the Visayas district is known for its dynamic 
+                              celebrations, like the Sinulog in Cebu City.
+
+                              <b>Mindanao</b>: The southernmost and second-biggest island bunch, Mindanao is portrayed 
+                              by its rough mountains, lavish rainforests, and various native societies.
+                                <pre>
+        </section>
+    <hr style="margin-top: -100px;"><hr>
+
+    <!-- Demographics -->
+        <section id="Demographics" style="margin-top: -130px;">
+            <h1>Demographics</h1>
+            <pre style="margin-top: -70px;">
+The Philippines is a Southeast Asian archipelago made of north of 7,000 islands, with a complete land area of 
+300,000 square kilometers (115,831 sq mi). Starting around 2023, the Philippines has an expected populace of 
+117.34 million individuals, making it the thirteenth most crowded country on the planet.</pre>
+
+<h3 style="margin-top: -30px;">     Population Growth</h3>
+<pre style="margin-top: -50px;">
+    The Philippines has a generally youthful populace, with a middle period of 25.2 years. The country's 
+    populace is developing at a yearly pace of 1.53%. This development is supposed to go on before long, 
+    with the populace projected to reach 142 million by 2050.</pre>
+
+<h3 style="margin-top: -30px;">     Population Distribution</h3>
+<pre style="margin-top: -50px;">
+    Most of the Philippine populace is gathered in the three principal island gatherings: Luzon, Visayas, 
+    and Mindanao. Luzon is the most crowded island bunch, with more than half of the nation's populace. 
+    Visayas and Mindanao each have around 25% of the populace.</pre>
+    
+    <h3 style="margin-top: -60px;">    Ethnicity</h3>
+    <pre style="margin-top: -70px;">
+    Most of Filipinos are Austronesian, with the biggest ethnic gatherings being Tagalog, Cebuano, and 
+    Ilocano. There are likewise critical minorities of Chinese, Spanish, and American plunge.</pre>
+
+    <h3 style="margin-top: -60px;">    Religion</h3>
+    <pre style="margin-top: -70px;">
+    The Philippines is a dominatingly Catholic country, with more than 80% of the populace recognizing as 
+    Catholic. Islam is the second biggest religion, with around 5% of the populace. There are likewise huge 
+    minority gatherings of Protestants, Evangelicals, and Buddhists.</pre>
+
+    <h3 style="margin-top: -60px;">    Language</h3>
+    <pre style="margin-top: -70px;">
+    The Philippines has two authority dialects: Filipino and English. Filipino is a normalized variant of 
+    Tagalog, while English is broadly utilized in business, government, and schooling. There are likewise 
+    north of 180 native dialects spoken in the country.</pre>
+        </section>
+
+<hr style="margin-top: -100px;"><hr>
+ <!-- Culture -->       
+ <section id="culture" style="margin-top: -150px;">
+    <h1>Culture</h1>
+    <pre style="margin-top: -80px;">
+Filipino culture is a dynamic and different embroidery woven from the strings of different impacts, including 
+native practices, Spanish imperialism, and American rule. It is portrayed by a profound appreciation for 
+family, local area, and friendliness.</pre>
+
+<img src="family.jpg" alt="Filipino family" style="width: 300px; height: 200px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Family</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+The family is the foundation of Filipino society. More distant families, frequently 
+comprising grandparents, aunties, uncles, and cousins, live respectively or in 
+nearness. Family ties areas of strength are relatives offer help and help to each 
+other over the course of life. </pre>
+
+<img src="community.jpg" alt="filipino community" style="width: 300px; height: 200px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Community</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+Filipinos are known for areas of strength for them of local area. They are much 
+of the time able to help neighbors and companions out of luck, and they take part 
+in an assortment of local area occasions, like celebrations and bayanihan, a 
+conventional act of public work.</pre>
+
+<img src="hospitality.jpg" alt="filipino hospitality" style="width: 300px; height: 200px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Hospitality</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+Filipinos are known for areas of strength for them of local area. They are much of 
+the time able to help neighbors and companions out of luck, and they take part in an 
+assortment of local area occasions, like celebrations and bayanihan, a conventional 
+act of public work.</pre>
+
+<img src="food.jpg" alt="filipino food" style="width: 300px; height: 200px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Food</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+Filipino food is a heavenly and different mix of flavors, mirroring the country's rich 
+history and social impacts. Well known dishes incorporate adobo, an exquisite stew of 
+meat or fish, sinigang, a harsh soup, and lechon, a simmered pig. </pre>
+
+<img src="festival.jpg" alt="filipino festival" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Festival</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+Celebrations are a significant piece of Filipino culture. They are praised consistently, 
+frequently out of appreciation for holy people or nearby legends. Well known celebrations 
+remember the Sinulog Celebration for Cebu, the Ati-Atihan Celebration in Aklan, and the 
+Dinagyang Celebration in Iloilo.</pre>
+    </section>
+
+<hr style="margin-top: -50px;"><hr>
+
+ <!-- Attractions -->       
+ <section id="attraction" style="margin-top: -150px;">
+    <h1>Tourist Attractions</h1>
+<section id="luzon">
+     <!-- Luzon -->   
+    <h3 style="margin-top: -100px;">Luzon Tourist Attractions</h3>
+<img src="luzon - riceterraces.jpg" alt="Rice Terraces" style="width: 300px; height: 200px; margin-top: -50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Rice Terraces</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+These UNESCO World Legacy Site porches are a wonder of designing and a 
+demonstration of the creativity of the Ifugao public. </pre>
+
+<img src="luzon - mayon.jpg" alt="Mayon Volcano" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Mayon Volcano</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This completely conelike fountain of liquid magma is a notorious 
+milestone of Albay area and one of the most dynamic volcanoes in 
+the Philippines.</pre>
+
+<img src="luzon - puerto.jpg" alt="Puerto Princesa Subterranean River National" style="width: 300px; height: 200px; margin-top: 30px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Puerto Princesa Subterranean River National Park</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+Another UNESCO World Legacy Site, this park is home to an underground 
+waterway that is safe by boat.</pre>
+
+<img src="luzon - boracay.jpg" alt="Boracay" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Boracay</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This famous island resort is known for its white sand seashores, clear 
+waters, and lively nightlife.</pre>
+
+<img src="luzon - falls.jpg" alt="Pagsanjan Falls" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Pagsanjan Falls</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This waterfall is a popular destination for swimming, hiking, 
+and spelunking.</pre>
+</section>
+<br>
+<hr>
+
+<!-- Visayas -->  
+<section id="visayas"> 
+<h3 style="margin-top: -80px;">Visayas Tourist Attractions</h3>
+<img src="visayas - hills.jpg" alt="Chocolate Hills" style="width: 300px; height: 200px; margin-top: -50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Chocolate Hills</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+These extraordinary topographical developments seem to be goliath 
+Hershey's Kisses, and are a well-known vacation destination in Bohol.</pre>
+
+<img src="visayas - shark.jpg" alt="Oslob Whale Sharks" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Oslob Whale Sharks</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+These delicate goliaths should be visible swimming with travelers in 
+the waters from Oslob, Cebu.</pre>
+
+<img src="visayas - malapascua.jpg " alt="Malapascua Island" style="width: 300px; height: 200px; margin-top: 30px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Malapascua Island</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This little island is a famous jumping objective, because of its 
+overflow of harvester sharks.</pre>
+
+<img src="visayas - bohol.jpg" alt="Bohol Island" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Bohol Island</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This island is home to the Chocolate Slopes, Tarsier monkeys, 
+and the Loboc Waterway Voyage.</pre>
+
+<img src="visayas - panglao.jpg" alt="Panglao Falls" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Panglao Falls</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This island is known for its delightful seashores, resorts, 
+and eateries.</pre>
+</section>
+<br>
+<hr>
+
+<!-- Mindanao -->  
+<section id="mindanao"> 
+<h3 style="margin-top: -80px;">Mindanao Tourist Attractions</h3>
+<img src="mindanao - siargao.jpg" alt="Siargao" style="width: 300px; height: 200px; margin-top: -50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Siargao</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This island is a surfer's heaven, with probably the best waves on the planet.</pre>
+    
+<img src="mindanao - lanao.jpg" alt="Lake Lanao" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Lake Lanao</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This crater lake is the biggest collection of freshwaters in the Philippines, 
+and is home to an assortment of fish and natural life.</pre>
+    
+<img src="mindanao - falls.jpg" alt="Maria Christina Falls" style="width: 300px; height: 200px; margin-top: 30px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Maria Christina Falls</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This cascade is the most elevated in the Philippines, and is a famous objective 
+for swimming and climbing.</pre>
+    
+<img src="mindanao - dakak.jpg" alt="Dakak Park" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Dakak Park</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This eco-park is home to various plants and animals, including the 
+Philippine eagle.</pre>
+    
+<img src="mindanao - magat.jpg" alt="Magat Falls" style="width: 300px; height: 200px; margin-top: 50px;"><br>
+<h3 style="margin-top: -210px; margin-left: 350px;">Magat Falls</h3>
+<pre style="margin-top: -50px; margin-left: 350px;">
+This cascade is quite possibly one of the most gorgeous in the 
+Philippines, and is a famous objective for swimming and photography.</pre>
+</section>
+
+<hr style="margin-top: 10px;"><hr>
+<section id="references"> 
+    <h1 style="margin-top: -80px;">References</h1>
+    <pre style="margin-top: -50px; margin-left: -40px; margin-bottom: -100px;">
+        Scott, W. H. (1985). The non-Negrito peoples of the Philippines. Greenwood Press.
+        Reid, A. (2010). Southeast Asia in the age of commerce, 1450-1600: Volume 1, The lands below 
+        the winds. Yale University Press.
+        Majul, C. A. (1973). Muslims in the Philippines. Ateneo de Manila University Press.
+        Diffie, W. G., & Winius, G. D. (1977). Foundations of Portuguese empire, 1415-1557. University 
+        of Minnesota Press.
+        Blair, E. H., & Robertson, J. A. (1903-1909). The Philippine islands, 1493-1898. A. H. Clark 
+        Company.
+        Taylor, J. (2009). The Philippine revolution. Penguin Books.
+        Karnow, S. (1980). In search of nowhere: A journey through the Philippines. Penguin Books.
+        Spector, R. H. (1988). Eagle against the sun: The American and Japanese campaigns in the 
+        Pacific, 1941-1945. New York: Random House.
+        The World Factbook 2022. (2022). Central Intelligence Agency.
+        PSA. (2023, May 11). Population of the Philippines reaches 117.34 million in 2023. Philippine 
+        Statistics Authority.
+        World Population Review. (2023). Philippines Population. World Population Review.
+        PSA. (n.d.). Population by Region, 2020 Census. Philippine Statistics Authority.
+        CIA. (2023). The World Factbook 2023 - Philippines. Central Intelligence Agency.
+        Pew Research Center. (2019, November 29). Philippines. Pew Research Center's Religion & Public 
+        Life Project.
+        Commission on the Filipino Language (KAWIKA). (n.d.). Ang Filipino at ang Ingles. Komisyon sa 
+        Wikang Filipino (KAWIKA).
+        Abella, J. (2020). The Filipino family: Continuity amidst change. In The Routledge Companion to
+         the Filipino Diaspora (pp. 95-112). Routledge.
+        Jocano, F. L. (2009). Filipino bayanihan: A concept of communal unity and cooperation (pp. 25-
+        30). In Asian Contributions to Psychology, 21(1-2), 25-30.
+        Gonzalez, A. B. (1981). Hospitality in Philippine culture: A study in the values of transformation. 
+        In International Journal of Intercultural Relations, 5(4), 441-458.
+        Romero, S. V. (2019). Filipino cuisine: A culinary journey from the Philippines to the global stage. 
+        In Culinary Arts and Science, 2(1), 1-3.
+        Pe-Pua, R. C. (2010). Embodying the nation: Performing citizenship through fiestas in the 
+        Philippines. In Asian Theatre Journal, 28(2), 281-308.
+        Philippine Tourism Authority. (2023). Top 50 Must-Visit Tourist Destinations in the Philippines. 
+        Philippine Tourism Authority.</pre>
+</section>
+</section>
+</section>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <h3> About Philippines </h3>
+            <ul>
+                <li><a href="#History"> History </a></li>
+                <li><a href="#geography"> Geography and Environment </a></li>
+                <li><a href="#Demographics"> Demographics </a></li>
+                <li><a href="#culture"> Culture </a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3> Tourist Attractions </h3>
+            <ul>
+                <li><a href="#luzon"> Luzon </a></li>
+                <li><a href="#visayas"> Visayas </a></li>
+                <li><a href="#mindanao"> Mindanao </a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3><a href="videogallery.html"> Video Gallery </a></h3>
+            <h3><a href="login.html"> Log-in </a></h3>
+            <h3><a href="contactus.html"> Contact Us </a></h3>
+        </div>
+    </div>
+    <center>
+    <div class="copyright">
+        <a href="#" style="display:flex;">
+            <img src="coa.png" style="margin-top: 10px; margin-left: 39rem; height:50px ;width:50px ;">
+            <img src="fun.png" style="margin-top: 10px; margin-left:22rem;height:50px; width:120px ;">
+            </a>
+            <p style="margin-top: -50px; padding: 15px;"> Copyright @ 2022. All Rights Reserved. </p>
+    </center>
+</div>
+</footer>
+</body>
+</html>
